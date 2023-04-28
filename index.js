@@ -14,7 +14,8 @@ const Coffeeshop = require("./modules/model"); //Skeema on määritelty kansioon
 
 var user = process.env.DB_USER //käyttäjätunnutkset yms. tallennettuna .env -tiedostossa
 var password = process.env.DB_PASS
-const uri = "mongodb+srv://" + user + ":" + password + "@cluster0.1z6n89r.mongodb.net/coffeeshopData?retryWrites=true&w=majority";
+const uri = process.env.DB_URI
+//const uri = "mongodb+srv://" + user + ":" + password + "@cluster0.1z6n89r.mongodb.net/coffeeshopData?retryWrites=true&w=majority";
 
 //Yhteydenotto MongoDB -tietokantaan mongoosen välityksellä.
 async function connect() {

@@ -1,5 +1,5 @@
-<h1> Fullstac Project: REAT API </h1>
-<h3> 😎 REAS API demo project with Node.js, Mongoose and MongoDB</h3>
+<h1> Fullstac Project: REST API </h1>
+<h3> 🍰 REST API demo project with Node.js, Mongoose and MongoDB</h3>
 <p>This Node.js project implements simple REST APIs for HTTP GET, POST, PUT and DELETE requests. </p>
 
 <hr>

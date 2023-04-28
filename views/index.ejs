@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+  <title>Home</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+  <style>
+                .container {
+                max-width: 700px;
+                min-width: 300px; 
+                margin: 0 auto;
+                padding: 30px;
+                }
+                .list-group-item {
+                width: 90%;
+                margin: 10px auto;
+                text-align: center;
+                }
+                h1 {
+                text-align: center;
+                }
+                h4{
+                    font-size: 20px;
+                }
+                #bodytext{
+                    text-align: left !important;
+                }
+                a{
+                  color: rgb(135, 0, 197);
+                  
+                }
+                a:hover{
+                  background-color: rgb(223, 253, 90);
+                  color: black;
+
+
+                }
+
+  </style>
+</head>
+<body>
+  <div class="container" id="c">
+    <h1>Fullstack project 2 - REST API</h1>
+    
+    <ul class="list-group">
+            <li class="list-group-item" id="bodytext">
+                <h4 class="list-group-item-heading">GET</h4>
+                <p><a href="/getall">/getall </a> - Returns all documents in the collection in JSON format<br>
+                  <a href="/items/6441145fe0fdbed0734e0773">/items/:id </a> - Returns one item as JSON with the given id</p></li>
+
+                <li class="list-group-item" id="bodytext">
+                  <h4 class="list-group-item-heading">POST</h4>
+                  <p> /addnew - Creates a new document in the collection</p></li>
+
+                  <li class="list-group-item" id="bodytext">
+                    <h4 class="list-group-item-heading">PUT</h4>
+                    <p> /edit/:id - Updates the document with the given id</p></li>
+
+                    <li class="list-group-item" id="bodytext">
+                      <h4 class="list-group-item-heading">DELETE</h4>
+                      <p> /delete/:id - Deletes the item with the given id</p></li>
+
+                      <li class="list-group-item" id="bodytext">
+                        <h4 class="list-group-item-heading">EXTRA: Returns all items with a simple UI</h4>
+                        <p><a href="/getall/menu">/getall/menu </a></p>
+                    
+          
+      </ul>
+  </div>
+</body>
+</html>

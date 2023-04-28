@@ -3,6 +3,7 @@ var express = require("express");
 var app = express();
 var mongoose = require("mongoose"); // otetaan mongoose käyttöön
 var bodyParser = require("body-parser");
+const port = process.env.PORT || 3000;
 
 require("dotenv").config(); //otetaan .env käyttöön salasanoja ja käyttäjätunnuksia varten
 
@@ -110,9 +111,11 @@ app.post('/addnew', async (req, res) => {
     }
   });
   
-  
 
 
-app.listen(3000, () => {
+/* app.listen(3000, () => {
     console.log('Server listening on port 3000');
+}); */
+app.listen(port, function() {
+  console.log(`Server running on http://localhost:${port}`);
 });

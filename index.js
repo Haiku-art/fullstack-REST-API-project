@@ -96,10 +96,11 @@ app.post('/addnew', async (req, res) => {
     }
   });
 
+  //DELETE poistaa dokumentin annetun id:n perusteella
   app.delete('/delete/:id', async (req, res) => {
     try {
       const id = req.params.id;
-      const deletedObject = await Coffeeshop.findByIdAndRemove(id);
+      const deletedObject = await Coffeeshop.findByIdAndRemove(id); //findByIdAndRemove on mongoosen valmisfunktio. 
       if (!deletedObject) {
         return res.status(404).send('Object not found');
       }

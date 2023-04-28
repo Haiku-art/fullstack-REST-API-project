@@ -84,7 +84,7 @@ app.post('/addnew', async (req, res) => {
     }
   });
 
-  //PUT pyyntö muokkaa dokumenttia annetus id:n perusteella, testattu Postmanilla
+  //PUT pyyntö muokkaa dokumenttia annetun id:n perusteella, testattu Postmanilla
   app.put("/edit/:id", async function (req, res) {
 
     const name = req.body.name;

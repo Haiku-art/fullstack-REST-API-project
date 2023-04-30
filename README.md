@@ -13,4 +13,4 @@
 <hr>
 <h3> ✅ DEPLOYMENT</h3>
 <p>This project is deployed on Render.com:<p>
-<p><b></b></p>
+<p><b>https://nodejs-rest-api-demo.onrender.com</b></p>

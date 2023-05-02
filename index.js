@@ -88,11 +88,12 @@ app.post('/addnew', async (req, res) => {
   //PUT pyyntö muokkaa dokumenttia annetun id:n perusteella, testattu Postmanilla
   app.put("/edit/:id", async function (req, res) {
 
-    const name = req.body.name;
+    //const name = req.body.name;
+    const price = req.body.price
     const id = req.params.id;
   
     try {
-      const updatedCoffeeshopItem = await Coffeeshop.findByIdAndUpdate(id, { name: name }, { new: true }); //findByIdAndUpdate on Mongoosen tarjoama valmisfunktio
+      const updatedCoffeeshopItem = await Coffeeshop.findByIdAndUpdate(id, { price: price }, { new: true }); //findByIdAndUpdate on Mongoosen tarjoama valmisfunktio
       res.json({ message: 'Object updated!', updatedCoffeeshop: updatedCoffeeshopItem });
         }catch (err) {res.status(400).json({ error: err.message });
     }
